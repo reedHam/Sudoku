@@ -1,0 +1,37 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include "Unit2.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+	 for (int i= 0; i < 9; i++){
+	 int j;
+		for (j = 0; j< 9; j++){
+				bord[i][j] = new Sudoku(this);
+				bord[i][j]->Parent = this;
+				bord[i][j]->Top = 42 + ((j%9)*40);
+				bord[i][j]->Left = 17 +((i%9)*40);
+				bord[i][j]->AutoSize = false;
+				bord[i][j]->Width = 33;
+				bord[i][j]->Height = 33;
+				bord[i][j]->setXY("cord" + IntToStr(i) + "_" + IntToStr(j));
+				bord[i][j]->Text = "";
+				bord[i][j]->MaxLength = 1;
+				bord[i][j]->NumbersOnly = true;
+				bord[i][j]->Font->Size = 19;
+				bord[i][j]->Font->Color = clWhite;
+				bord[i][j]->Color = clMedGray;
+		}
+	 }
+}
+//---------------------------------------------------------------------------
+

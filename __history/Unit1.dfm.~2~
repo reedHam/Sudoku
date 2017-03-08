@@ -1,0 +1,102 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 434
+  ClientWidth = 386
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Shape1: TShape
+    Left = 12
+    Top = 0
+    Width = 3
+    Height = 433
+    Brush.Color = clBlack
+  end
+  object Shape2: TShape
+    Left = 133
+    Top = 0
+    Width = 3
+    Height = 462
+    Brush.Color = clBlack
+  end
+  object Shape3: TShape
+    Left = 252
+    Top = 0
+    Width = 3
+    Height = 449
+    Brush.Color = clBlack
+  end
+  object Shape4: TShape
+    Left = 0
+    Top = 62
+    Width = 497
+    Height = 3
+    Brush.Color = clBlack
+  end
+  object Shape5: TShape
+    Left = 0
+    Top = 180
+    Width = 497
+    Height = 3
+    Brush.Color = clBlack
+  end
+  object Shape6: TShape
+    Left = -46
+    Top = 302
+    Width = 497
+    Height = 3
+    Brush.Color = clBlack
+  end
+  object Shape7: TShape
+    Left = -48
+    Top = 302
+    Width = 497
+    Height = 3
+    Brush.Color = clBlack
+  end
+  object Shape9: TShape
+    Left = 0
+    Top = 424
+    Width = 497
+    Height = 3
+    Brush.Color = clBlack
+  end
+  object Shape10: TShape
+    Left = 372
+    Top = 0
+    Width = 3
+    Height = 449
+    Brush.Color = clBlack
+  end
+  object Label1: TLabel
+    Left = 142
+    Top = 23
+    Width = 105
+    Height = 39
+    Caption = 'Sudoku'
+    Color = clGradientInactiveCaption
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Font.Quality = fqAntialiased
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape8: TShape
+    Left = -50
+    Top = 302
+    Width = 497
+    Height = 3
+    Brush.Color = clBlack
+  end
+end
